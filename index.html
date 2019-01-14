@@ -49,6 +49,22 @@
           <br>
           <p>Tworzymy 3 systemy plików fat32 dla gruba za pomocą polecenia mkfs.fat -F32, ext4 dla systemu oraz użytkowników na 2 partycjach za pomocą mkfs.ext4. </p>
           <img src="Arch_instalacja/system_plikow.png" alt="lista">
+          <p>Czas zamontować partycje w katalogu /mnt stworzyć folder /home, oraz zamontowanie go w odpowiednim miejscu.</p>
+          <img src="Arch_instalacja/montowanie.png" alt="mount">
+          <p>Zobaczmy jak się zamontowały nasze partycje poleceniem lsblk.</p>
+          <img src="Arch_instalacja/lista_mount.png" alt="mount">
+          <p>Czas na instalacje systemu za pomocą polecenia (pacstrap -i) nasza partycje na system zamontowaliśmy w /mnt wiec wskazujemy w tym miejscu ma się zainstalować system,</p>
+          <p> oraz pokazujemy mu że interesuje nas paczka base-devel.</p>
+          <img src="Arch_instalacja/installer001.png" alt="mount">
+          <p>Przeklikujemy enterem ponieważ chcemy wszystkie pakiety oraz na końcu potwierdzamy wpisując y.</p>
+          <img src="Arch_instalacja/potwierdz%20instalacje.png" alt="instalacja">
+          <p>Po instalacji powinnyśmy mięć takie okno.</p>
+          <img src="Arch_instalacja/koniecinstalacji.png" alt="instalacja">
+          <p>Generujemy fstab oraz odpalamy system w chroot za pomocą arch-chroot.</p>
+          <img src="Arch_instalacja/chroot.png" alt="instalacja">
+          
+          
+          
        </article>
         
     </main>
