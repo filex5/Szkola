@@ -62,6 +62,37 @@
           <img src="Arch_instalacja/koniecinstalacji.png" alt="instalacja">
           <p>Generujemy fstab oraz odpalamy system w chroot za pomocą arch-chroot.</p>
           <img src="Arch_instalacja/chroot.png" alt="instalacja">
+          <p>Czas ustawić opcje językowe otwieramy edytorem nano plik /etc/locale.gen i usuwamy komentarz (#) pl_PL.UTF-8 UTF-8.</p>
+          <img src="Arch_instalacja/opcjejezykowe001.png" alt="instalacja">
+          <p>Generujemy ustawienia języka, tworzymy dowiązanie symboliczne do strefy czasowej i ustawiamy zegar systemowy, po czym zajmujemy się nazwą hosta za pomocą echo.</p>
+          <img src="Arch_instalacja/konfiguracja001.png" alt="instalacja">
+          <p>Konfigurujemy plik hosts dla pętli zwrotnej.</p>
+          <img src="Arch_instalacja/hosts.png" alt="instalacja">
+          <p>Instalujemy NetworkManager, aby mieć możliwość konfiguracji sieci w naszym systemie.</p>
+          <img src="Arch_instalacja/networkmanager.png" alt="instalacja">
+          <p>Włączamy NetworkManager dla systemd by był włączony przy starcie systemu.</p>
+          <img src="Arch_instalacja/networkmanager2.png" alt="instalacja">
+          <p>Kolejną ważną kwestią jest zmiana hasła dla użytkownika root.</p>
+          <img src="Arch_instalacja/passwd.png" alt="instalacja">
+          <p>Instalujemy grub oraz efibootmng.</p>
+          <img src="Arch_instalacja/grub001.png" alt="instalacja">
+          <p>Tworzymy folder /boot/efi oraz montujemy tam nasza partycje 512mb z systemem plików fat32.</p>
+          <img src="Arch_instalacja/grub002.png" alt="instalacja">
+          <p>Instalujemy gruba, generujemy konfiguracje poleceniem grub-mkconfig, tworzymy katalog /boot/efi/EFI/BOOT</p>
+          <p> następnie kopiujemy tam plik jak na obrazku niżej zmieniając nazwę na podaną z dużej litery.</p>
+          <img src="Arch_instalacja/grub003.png" alt="instalacja">
+          <p>Tworzymy/edytujemy plik /boot/efi/startup.nsh wpisując co na obrazku pamietamy, aby używać \ do oznaczenia ścieżki. </p>
+          <img src="Arch_instalacja/grub004.png" alt="instalacja">
+          <p>wychodzimy z chroot, odmontujemy zamontowane partycje rekursywnie za pomoca (umount -R).</p>
+          <img src="Arch_instalacja/reboot.png" alt="instalacja">
+           <p>Logujemy sie do systemu jako root.</p>
+          <img src="Arch_instalacja/login.png" alt="instalacja">
+          
+          
+          
+          
+          
+
           
           
           
