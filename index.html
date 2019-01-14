@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <script src=""></script>
+    <header>
+    <h1>Don Filemon Blog </h1>
+        <p>Blog o Linuxie, administracji, i innych pierdołach.</p>
+    </header>
+    <nav>
+      <ul>
+          <li><a href="index.html">Arch</a></li>
+          <li><a href="news.html">Ubuntu Server</a></li>
+          <li><a href="contact.html">Ansible</a></li>
+          <li><a href="about.html">Ubuntu Server cd..</a></li>
+      </ul>
+        
+    </nav>
+    <main>
+       <article>
+          <h3>Instalacja Arch Linuxa</h3>
+          <p>Moja przygoda z instalacja archa.</p>
+          <br>
+          <p>Na początku sprawdźmy nasze dyski żeby określić na którym urządzeniu chcemy stworzyć partycje i zainstalować Archa.</p>
+          <p>można się posłużyć 2 komendami (lsblk) - lista urządzeń blokowych lub (fdisk -l) polecenie wyświetla listę dysków.</p>
+          <img src="Arch_instalacja/arch_blk.png" alt="lista urzadzeń">
+          <p>Dyski znajdują się w folderze /dev czyli device (z angielskiego urządzenia) są one numerowane alfabetycznie od a do z,</p>
+          <p>kiedy jesteśmy pewni jakiego dysku chcemy użyć pora utworzyć partycje za pomocą (cfdisk).</p>
+          <img src="Arch_instalacja/partycja001.png" alt="partycjonowanie">
+          <p>Utworzymy teraz 3 partycje 512mb dla gruba, 5gb na system, i 2.5gb dla urzytkownikow.</p>
+          <img src="Arch_instalacja/partycja002.png" alt="partycjonowanie">
+          <img src="Arch_instalacja/partycja003.png" alt="partycjonowanie">
+          <img src="Arch_instalacja/partycja004.png" alt="partycjonowanie">
+          <img src="Arch_instalacja/partycja005.png" alt="partycjonowanie">
+          <br>
+          <br>
+          <br>
+          <p>Sprawdzamy utworzone partycje polecaniami lsblk lub fdisk -l jak kto woli.</p>
+          <img src="Arch_instalacja/listapartycji001.png" alt="lista">
+          <img src="Arch_instalacja/listapartycji002.png" alt="lista">
+          <br>
+          <br>
+          <br>
+          <p>Tworzymy 3 systemy plików fat32 dla gruba za pomocą polecenia mkfs.fat -F32, ext4 dla systemu oraz użytkowników na 2 partycjach za pomocą mkfs.ext4. </p>
+          <img src="Arch_instalacja/system_plikow.png" alt="lista">
+       </article>
+        
+    </main>
+    <footer>
+        <p>Don Filemon Blog</p>
+    </footer>
+</body>
+</html>
